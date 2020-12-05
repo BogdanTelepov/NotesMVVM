@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_margin="10dp"
+    tools:context=".mvvm.ui.screens.note.NoteFragment">
+
+
+    <TextView
+        android:id="@+id/note_name"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:lines="1"
+        android:textColor="@color/design_default_color_primary_dark"
+        android:textSize="@dimen/item_note_name"
+        android:textStyle="bold"
+
+        tools:text="Name note" />
+
+    <TextView
+        android:id="@+id/note_text"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/note_name"
+        android:layout_margin="@dimen/app_margin"
+        android:text="@string/note_text"
+        android:textColor="@color/design_default_color_primary"
+        android:textSize="16sp" />
+
+</RelativeLayout>
